@@ -82,12 +82,12 @@ body::before {
 }
 
 .hero {
-  min-height: calc(100svh - 96px);
+  min-height: calc(82svh - 96px);
   display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
-  gap: 48px;
+  grid-template-columns: minmax(0, 1.35fr) minmax(260px, 0.65fr);
+  gap: 40px;
   align-items: center;
-  padding: 34px 0 56px;
+  padding: 22px 0 40px;
 }
 
 .eyebrow,
@@ -116,8 +116,8 @@ h2 {
 }
 
 h1 {
-  font-size: clamp(3.4rem, 7vw, 7.2rem);
-  max-width: 11ch;
+  font-size: clamp(2.4rem, 4.8vw, 4.6rem);
+  max-width: 13ch;
 }
 
 h2 {
@@ -137,16 +137,16 @@ p {
 }
 
 .hero-text {
-  max-width: 62ch;
-  font-size: 1.08rem;
-  margin: 24px 0 0;
+  max-width: 58ch;
+  font-size: 1rem;
+  margin: 18px 0 0;
 }
 
 .hero-actions {
   display: flex;
   gap: 14px;
   flex-wrap: wrap;
-  margin-top: 28px;
+  margin-top: 22px;
 }
 
 .button {
@@ -178,18 +178,20 @@ p {
 }
 
 .hero-panel {
-  padding: 22px;
-  border-radius: 32px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.74), rgba(255, 255, 255, 0.46));
-  border: 1px solid rgba(255, 255, 255, 0.48);
-  box-shadow: var(--shadow);
+  max-width: 320px;
+  justify-self: end;
+  padding: 18px;
+  border-radius: 24px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.66), rgba(255, 255, 255, 0.38));
+  border: 1px solid rgba(16, 23, 34, 0.08);
+  box-shadow: 0 18px 48px rgba(15, 23, 32, 0.1);
 }
 
 .portrait-wrap {
   position: relative;
   overflow: hidden;
-  border-radius: 24px;
-  aspect-ratio: 0.96;
+  border-radius: 18px;
+  aspect-ratio: 0.92;
   background: linear-gradient(160deg, #233447 0%, #121c28 100%);
 }
 
@@ -202,13 +204,13 @@ p {
 
 .signal-list {
   display: grid;
-  gap: 18px;
-  margin-top: 22px;
+  gap: 14px;
+  margin-top: 16px;
 }
 
 .signal-list strong {
   display: block;
-  font-size: 1.06rem;
+  font-size: 0.98rem;
   line-height: 1.4;
 }
 
@@ -255,6 +257,57 @@ main section + section {
 
 .project-row:last-of-type {
   border-bottom: 1px solid var(--line);
+}
+
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.cert-card {
+  padding: 20px 22px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.46);
+  border: 1px solid rgba(16, 23, 34, 0.08);
+}
+
+.cert-card h3 {
+  font-size: 1.08rem;
+  margin-bottom: 10px;
+}
+
+.cert-card p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.cert-card p + p {
+  margin-top: 6px;
+}
+
+.skills-groups {
+  display: grid;
+  gap: 22px;
+}
+
+.skills-group {
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+
+.skills-group h3 {
+  font-size: 1rem;
+  margin-bottom: 14px;
+}
+
+.skills-group .focus-rail {
+  margin-top: 0;
+}
+
+.skills-group .focus-rail span {
+  background: rgba(255, 255, 255, 0.42);
+  border: 1px solid rgba(16, 23, 34, 0.08);
 }
 
 .project-tech {
@@ -322,13 +375,19 @@ main section + section {
   .hero,
   .profile-grid,
   .project-row,
-  .credibility-grid {
+  .credibility-grid,
+  .certifications-grid {
     grid-template-columns: 1fr;
   }
 
   .hero {
     min-height: auto;
     padding-top: 12px;
+  }
+
+  .hero-panel {
+    justify-self: start;
+    max-width: 280px;
   }
 
   .project-link {
@@ -348,7 +407,7 @@ main section + section {
   }
 
   h1 {
-    font-size: clamp(2.8rem, 14vw, 4.4rem);
+    font-size: clamp(2rem, 10vw, 3rem);
   }
 
   .hero-panel,
