@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./styles.css?v=20260919" />
+  <link rel="stylesheet" href="./styles.css?v=20260919-cases" />
   <script src="./script.js?v=20260918" defer></script>
   <script type="application/ld+json">
     {
@@ -44,7 +44,7 @@
           <p class="hero-text">20+ years of experience, including AWS, Informatica, and Wipro. I connect customer strategy with hands-on applied AI engineering, from global shop-floor analytics to coding agents and CAD simulation.</p>
           <div class="hero-actions">
             <a class="button" href="#work">Explore my projects <span aria-hidden="true">↘</span></a>
-            <a class="text-link" href="./assets/Anil_Praneeth_Vure_Resume.pdf?v=20260919" download="Anil_Praneeth_Vure_Resume.pdf">Resume PDF <span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="./assets/Anil_Praneeth_Vure_Resume.pdf?v=20260919-cases" download="Anil_Praneeth_Vure_Resume.pdf">Resume PDF <span aria-hidden="true">↓</span></a>
             <a class="text-link" href="https://github.com/anilpraneeth" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
           </div>
         </div>
@@ -58,6 +58,7 @@
             <p class="lead-copy">I built an overall equipment effectiveness (OEE) analytics solution for a global automotive manufacturer, enabling comparisons across shifts and shop floors that helped improve productivity and reduce manufacturing cycle times.</p>
             <p>My AWS work spans manufacturing IoT, machine learning, computer vision, and time-series analytics. I design architectures for industrial data ingestion, streaming analytics, and edge-to-cloud integration, with attention to security, governance, scale, and observability.</p>
             <p>I partner with sales, business development, and technical teams on workload strategy and AWS adoption. I lead architecture discussions, create executive-ready solution guidance, and develop field enablement that helps teams turn operational needs into implementable systems.</p>
+            <a class="text-link" href="./projects/manufacturing-analytics/">Read the manufacturing analytics case study <span aria-hidden="true">↗</span></a>
           </div>
         </div>
         <div class="career-history reveal">
@@ -67,17 +68,19 @@
       </section>
       <section class="section-block" id="work" aria-labelledby="work-title">
         <div class="section-intro reveal"><p class="section-label">02 / Independent projects</p><h2 id="work-title">Building with agents.<br />Grounded in real workflows.</h2></div>
+        <nav class="case-study-index reveal" aria-label="Project case studies"><p>Go deeper into the engineering</p><a href="./projects/quatrion/">Quatrion &amp; spatial tokenization <span aria-hidden="true">↗</span></a><a href="./projects/learning-app/">Agent-built learning application <span aria-hidden="true">↗</span></a><a href="./projects/manufacturing-analytics/">Global manufacturing analytics <span aria-hidden="true">↗</span></a></nav>
         <article class="project-row two-columns reveal">
-          <div class="project-meta"><p class="project-kicker">Manufacturing platform · In development</p><h3>Quatrion</h3><p class="project-tech">Coding agents · Python → C++/CUDA · Spatial tokenization · CAD · FEA · CFD</p><a class="text-link" href="https://github.com/quatrion" target="_blank" rel="noopener noreferrer">Quatrion on GitHub <span aria-hidden="true">↗</span></a></div>
+          <div class="project-meta"><p class="project-kicker">Manufacturing platform · In development</p><h3>Quatrion</h3><p class="project-tech">Coding agents · Python → C++/CUDA · Spatial tokenization · CAD · FEA · CFD</p><a class="text-link" href="./projects/quatrion/">Quatrion case study <span aria-hidden="true">↗</span></a><p class="project-note">Private repositories.</p></div>
           <div>
             <p class="lead-copy">I’m building an agentic platform for manufacturing companies, connecting natural-language requests to CAD and simulation services.</p>
             <ul class="project-details">
-              <li><strong>Agent-directed solver refactoring.</strong> Directed coding agents to refactor a Python FEA solver into C++/CUDA for NVIDIA GPUs, using knowledge-graph grounding and multi-agent debate to guide implementation.</li>
               <li><strong>Spatial tokenization and grounding.</strong> Built bounded knowledge graphs linking CAD parts, assembly hierarchy, 3D positions, orientations, and surface-distance relationships. These give LLMs structured spatial context, with bounded views and source provenance.</li>
+              <li><strong>Agent-directed solver refactoring.</strong> Directed coding agents on Python-to-C++/CUDA FEA refactoring for NVIDIA GPUs, using knowledge-graph grounding and multi-agent debate. Separately, integration of Quatrion’s native CAD and spatial runtime is ongoing.</li>
               <li><strong>Custom FEA solvers.</strong> FEniCSx and PETSc solvers for linear and nonlinear structural analysis, including large deformation, J2 plasticity, GPU-accelerated sparse solves, and analytical benchmark tests.</li>
               <li><strong>CFD and forming workflows.</strong> CFD case validation and postprocessing, plus sheet-metal forming through OpenRadioss integration, asynchronous jobs, and solver-output KPI extraction.</li>
               <li><strong>Agent and deployment workflows.</strong> Structured tool calling, configurable model providers, reusable Codex and Claude Code skills, and Kubernetes/Helm deployment automation for cloud and on-premises targets, with authentication gates and CI checks for service contracts and infrastructure.</li>
             </ul>
+            <a class="text-link case-study-link" href="./projects/quatrion/">Explore Quatrion: concept, architecture &amp; validation <span aria-hidden="true">↗</span></a>
           </div>
         </article>
         <article class="project-row two-columns reveal">
@@ -87,6 +90,7 @@
             <p>I coordinated parallel Codex agents for implementation and review across an AI-assisted software development lifecycle (SDLC), with browser validation.</p>
             <p>Amazon Bedrock provides tutoring and Amazon Polly provides narration. Strict-schema response validation and regression tests reject malformed or lesson-incompatible outputs, with authored fallback guidance. Learner records are isolated, credentials stay server-side, and progress supports autosave, lesson resume, and backup restoration.</p>
             <p>A September 2026 software validation run passed 682 tests, lint checks, and a production build.</p>
+            <a class="text-link" href="./projects/learning-app/">Read how I built and validated the learning app <span aria-hidden="true">↗</span></a>
           </div>
         </article>
         <article class="project-row two-columns reveal">
@@ -120,7 +124,7 @@
       </section>
       <section class="contact-section section-block reveal" id="contact" aria-labelledby="contact-title">
         <p class="section-label">Let’s connect</p><h2 id="contact-title">Working on AI for<br />the physical world?</h2><p>I’m interested in conversations about manufacturing AI, agentic applications, developer tools, and customer solutions architecture.</p>
-        <div class="hero-actions"><a class="button" href="https://www.linkedin.com/in/anilpraneeth/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn <span aria-hidden="true">↗</span></a><a class="text-link" href="./assets/Anil_Praneeth_Vure_Resume.pdf?v=20260919" download="Anil_Praneeth_Vure_Resume.pdf">Download resume <span aria-hidden="true">↓</span></a><a class="text-link" href="https://github.com/anilpraneeth" target="_blank" rel="noopener noreferrer">Explore GitHub <span aria-hidden="true">↗</span></a></div>
+        <div class="hero-actions"><a class="button" href="https://www.linkedin.com/in/anilpraneeth/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn <span aria-hidden="true">↗</span></a><a class="text-link" href="./assets/Anil_Praneeth_Vure_Resume.pdf?v=20260919-cases" download="Anil_Praneeth_Vure_Resume.pdf">Download resume <span aria-hidden="true">↓</span></a><a class="text-link" href="https://github.com/anilpraneeth" target="_blank" rel="noopener noreferrer">Explore GitHub <span aria-hidden="true">↗</span></a></div>
       </section>
     </main>
     <footer class="site-footer"><span>Anil Praneeth Vure · Austin, Texas</span><a href="#top">Back to top ↑</a></footer>
